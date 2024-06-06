@@ -713,16 +713,16 @@
 
 
 <h1 id="install-better-xcloud-on-kiwi-browser">Install Better xCloud on Kiwi Browser</h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<ul>
-<li>Not working with Kiwi Browser 124.x (it's their fault). Use version 123.x or lower instead.</li>
-</ul>
-</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
 <li>The <a href="../android/">Android app</a> is available for testing. It's recommended over using Kiwi Browser.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul>
+<li>If you're using Kiwi Browser 124.x, after installing, open Better xCloud's settings, and switch User-Agent profile to <code>Kiwi Browser v123</code></li>
 </ul>
 </div>
 <div class="admonition note">
@@ -740,8 +740,16 @@
 <p><a class="md-button md-button--primary" href="https://www.apkmirror.com/apk/geometry-ou/kiwi-browser-fast-quiet/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49Z"/></svg></span> Sideload on APKMirror</a></p>
 </li>
 <li>
-<p>Install the <strong>Tampermonkey extension</strong>  </p>
-<p><a class="md-button md-button--primary" href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5Z"/></svg></span> Install <strong>Tampermonkey</strong></a></p>
+<p>Install the <strong>Tampermonkey extension</strong><br />
+    Kiwi Browser doesn't support Tampermonkey 5.2 or later (switched to Manifest v3) so you'll have to install an older version.</p>
+<ol>
+<li>Remove Tampermonkey 5.2 if you're using it.</li>
+<li>Download version 5.1.1: <a href="https://www.tampermonkey.net/crx/tampermonkey_legacy_self_signed.crx">tampermonkey.net/crx/tampermonkey_legacy_self_signed.crx</a></li>
+<li>Go to the <a href="chrome://extensions">Extensions page</a>, click on the "+ (from .zip/.crx/.user.js)" button, then select the recently downloaded file.</li>
+<li>If done correctly you’ll see Tampermonkey 5.1.1 as in the screenschot.</li>
+<li>Reinstall Better xCloud.</li>
+</ol>
+<p><img alt="tampermonkey" src="../images/kiwi-tampermonkey.png" /></p>
 </li>
 <li>
 <p>Install <strong>Better xCloud</strong> script  </p>
