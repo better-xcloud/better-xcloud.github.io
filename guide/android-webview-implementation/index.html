@@ -12,28 +12,28 @@
         <meta name="author" content="redphx">
       
       
-        <link rel="canonical" href="https://better-xcloud.github.io/translators/">
+        <link rel="canonical" href="https://better-xcloud.github.io/guide/android-webview-implementation/">
       
       
-        <link rel="prev" href="../donation/">
+        <link rel="prev" href="../android-webview-tweaks/">
       
       
-        <link rel="next" href="../acknowledgements/">
+        <link rel="next" href="../../donation/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>Translators - Better xCloud</title>
+        <title>How to switch Android WebView implementation - Better xCloud</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-switch-android-webview-implementation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Better xCloud" class="md-header__button md-logo" aria-label="Better xCloud" data-md-component="logo">
+    <a href="../.." title="Better xCloud" class="md-header__button md-logo" aria-label="Better xCloud" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Translators
+              How to switch Android WebView implementation
             
           </span>
         </div>
@@ -194,7 +199,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Better xCloud" class="md-nav__button md-logo" aria-label="Better xCloud" data-md-component="logo">
+    <a href="../.." title="Better xCloud" class="md-nav__button md-logo" aria-label="Better xCloud" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -224,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -281,7 +286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
+      <a href="../../android/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -302,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../browsers/" class="md-nav__link">
+      <a href="../../browsers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -323,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chromium/" class="md-nav__link">
+      <a href="../../chromium/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -344,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kiwi-browser/" class="md-nav__link">
+      <a href="../../kiwi-browser/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -365,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../safari/" class="md-nav__link">
+      <a href="../../safari/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -386,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lg-webos/" class="md-nav__link">
+      <a href="../../lg-webos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../features/" class="md-nav__link">
+      <a href="../../features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ingame-features/" class="md-nav__link">
+      <a href="../../ingame-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clarity-boost/" class="md-nav__link">
+      <a href="../../clarity-boost/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../native-mouse-and-keyboard/" class="md-nav__link">
+      <a href="../../native-mouse-and-keyboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -535,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mouse-and-keyboard/" class="md-nav__link">
+      <a href="../../mouse-and-keyboard/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../local-co-op/" class="md-nav__link">
+      <a href="../../local-co-op/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remote-play/" class="md-nav__link">
+      <a href="../../remote-play/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../stream-stats/" class="md-nav__link">
+      <a href="../../stream-stats/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,7 +624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../screenshot-capture/" class="md-nav__link">
+      <a href="../../screenshot-capture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -664,19 +669,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -690,7 +695,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Guides
@@ -704,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guide/android-webview-tweaks/" class="md-nav__link">
+      <a href="../android-webview-tweaks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -722,10 +727,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../guide/android-webview-implementation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -734,6 +748,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -753,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../donation/" class="md-nav__link">
+      <a href="../../donation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -770,17 +785,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../translators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +797,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -801,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../acknowledgements/" class="md-nav__link">
+      <a href="../../acknowledgements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -831,6 +838,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -848,35 +857,62 @@
   
 
 
-  <h1>Translators</h1>
-
-<p>Thanks to all these translators for helping this project:</p>
+<h1 id="how-to-switch-android-webview-implementation">How to switch Android WebView implementation</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul>
-<li><strong>Chinese (Simplified)</strong>: <a href="https://github.com/nyavana">@nyavana</a>, hasegawataku</li>
-<li><strong>Catalan</strong>: <a href="https://github.com/Marxally">@Marxally</a></li>
-<li><strong>French</strong>: hfrrrr, rodolphe.chouteau, Stay34yth, pedrohenriquebragap, Bhaal42</li>
-<li><strong>German</strong>: <a href="https://github.com/KingNothing81">@KingNothing81</a>, mynameismanu</li>
-<li><strong>Korean</strong>: JPcompany, mg2000kim, magicsgram, <a href="https://github.com/rightones">@rightones</a>, jibyong</li>
-<li><strong>Indonesian</strong>: <a href="https://github.com/fortifying">@fortifying</a>, satyamuafa6</li>
-<li><strong>Italian</strong>: <a href="https://github.com/piersandro">@piersandro</a>, Greenylie, Rakan129, Carza-104, graziequalcuno, DioCannabinoide, Mr_Nick, howtoc0d3</li>
-<li><strong>Japanese</strong>: Tak_attack, udonshi</li>
-<li><strong>Portuguese (Brazilian)</strong>: <a href="https://github.com/ricardo404">@ricardo404</a>, <a href="https://github.com/Haisom">@Haisom</a>, LucasG021, italorafael22062009, PotatoPTT, guilhermecursi, renatomaster01, andrefracopires, elisandromoraes555, tparavani, Jh0wn_, bimiquelin, SepiaMoon</li>
-<li><strong>Polish</strong>: <a href="https://github.com/aleksishere">@aleksishere</a>, slajerek</li>
-<li><strong>Russian</strong>: anpom6, soophik, Ferret, aforned, shaheraghwat</li>
-<li><strong>Spanish</strong>: <a href="https://github.com/PabloSebas">@PabloSebas</a>, hectorevil, csvnchzn, pablocjs2812, blue89bravo</li>
-<li><strong>Thai</strong>: pawattoto  </li>
-<li><strong>Turkish</strong>: <a href="https://github.com/transbebek">@transbebek</a>, ogulcanbayram</li>
-<li><strong>Ukrainian</strong>: btnc_ua, fawkespc, glebanych, weapon_scar</li>
-<li><strong>Vietnamese</strong>: <a href="https://github.com/redphx">@redphx</a></li>
+<li>This change only applies to the Better xCloud app. Your device still uses the default WebView implementation.</li>
+<li>Not all browsers can be selectable. If you don't see it in the list, it means that browser/version isn't supported.</li>
+<li>If the app crashes on startup, open it again for a few more times and it will open the Settings so you can change the WebView.</li>
 </ul>
-<p>Visit <a href="https://crowdin.com/project/better-xcloud">here</a> if you want to translate <strong>Better xCloud</strong> to more languages.<br />
-Use <a href="https://github.com/redphx/better-xcloud/discussions/131">this post</a> for discussion.  </p>
+</div>
+<p>Make sure you're using the latest version of Better xCloud app.</p>
+<ol>
+<li>
+<p>Install the WebView provider you want to use:</p>
+<ul>
+<li>
+<p>Android System WebView: <a href="https://www.apkmirror.com/apk/google-inc/android-system-webview/">APKMirror</a><br />
+<!-- - Chrome: <a href="https://www.apkmirror.com/apk/google-inc/chrome/chrome-123-0-6312-81-release/">APKMirror</a> (you must install this version, the version on Play Store doesn't work) --></p>
+</li>
+<li>
+<p>Thorium: <a href="https://github.com/Alex313031/Thorium">info</a></p>
+<ul>
+<li><a href="https://github.com/Alex313031/Thorium-Android/releases/download/M124.0.6367.218/SystemWebView_arm64.apk">64-bit device</a>  </li>
+<li><a href="https://github.com/Alex313031/Thorium-Android/releases/download/M124.0.6367.218/SystemWebView_arm32.apk">32-bit device</a>  <blockquote>
+<p>Shown as <code>Android System WebView...</code>. You can't install this WebView if you already have a <code>com.android.webview</code> app on your device.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>DivestOS Mulch WebView: <a href="https://divestos.org/pages/our_apps#mull">info</a></p>
+<ul>
+<li><a href="https://gitlab.com/divested-mobile/mulch/-/raw/master/prebuilt/arm64/webview.apk">64-bit device</a></li>
+<li><a href="https://gitlab.com/divested-mobile/mulch/-/raw/master/prebuilt/arm/webview.apk">32-bit device</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Open Better xCloud Android app &gt; <code>Settings</code> &gt; <code>WebView implementation</code> &gt; pick the new WebView.</p>
+</li>
+<li>⚠️ Close the app completly (force close) and re-open it.</li>
+<li>If the app crashes on startup, open it again for a few more times and it will open the Settings so you can change the WebView. If this doesn't happen, clear Better xCloud app's settings and try again.  </li>
+<li>You may need to do <a href="../android-webview-tweaks/">additional steps</a> to improve the performance.</li>
+</ol>
+<p><img alt="Android WebView implementation" src="../../images/android/android-webview-implementation.png" /></p>
+<h1 id="found-bugsissues">Found bugs/issues?</h1>
+<p>Report bugs in <a href="https://github.com/redphx/better-xcloud-android/issues/55">issue #55</a> (along with <a href="https://www.xda-developers.com/how-to-take-logs-android/">Logcat</a>).</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -937,10 +973,10 @@ Use <a href="https://github.com/redphx/better-xcloud/discussions/131">this post<
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
