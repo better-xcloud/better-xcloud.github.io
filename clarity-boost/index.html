@@ -88,9 +88,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Better xCloud" class="md-header__button md-logo" aria-label="Better xCloud" data-md-component="logo">
       
@@ -183,6 +181,156 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Introduction
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../android/" class="md-tabs__link">
+          
+  
+  How to install
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../features/" class="md-tabs__link">
+          
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../guide/android-webview-tweaks/" class="md-tabs__link">
+          
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../donation/" class="md-tabs__link">
+        
+  
+    
+  
+  ❤️ Donation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../translators/" class="md-tabs__link">
+        
+  
+    
+  
+  Translators
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../acknowledgements/" class="md-tabs__link">
+        
+  
+    
+  
+  Acknowledgements
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -196,8 +344,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Better xCloud" class="md-nav__button md-logo" aria-label="Better xCloud" data-md-component="logo">
       
@@ -233,7 +383,7 @@
         
   
   <span class="md-ellipsis">
-    About
+    Introduction
   </span>
   
 
@@ -250,6 +400,11 @@
   
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -423,15 +578,23 @@
     
     
     
+      
+        
+        
+      
+      
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -460,7 +623,7 @@
         
   
   <span class="md-ellipsis">
-    Features
+    Global settings
   </span>
   
 
@@ -481,7 +644,7 @@
         
   
   <span class="md-ellipsis">
-    In-game features
+    Stream settings
   </span>
   
 
@@ -737,6 +900,11 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -947,7 +1115,7 @@
 
 <p>This feature improves the visual quality of the stream to make it look clearer and sharper. Unlike <a href="https://www.microsoft.com/en-us/edge/features/clarity-boost">Edge's exclusive Clarity Boost feature</a>, this works with all kind of devices and browsers.</p>
 <h3 id="how-to-use">How to use</h3>
-<p><img alt="Clarity boost's settings" src="../images/clarity-boost/settings.png" width="400" /></p>
+<p><img alt="Clarity boost's settings" src="../images/settings/video-settings.png" width="400" /></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Disable Edge's Clariy Boost feature first if you're using it.</p>
@@ -962,20 +1130,29 @@
 <li>
 <p>Renderer: there are two options</p>
 <ul>
-<li>Default</li>
-<li>WebGL2: better performance + battery life</li>
+<li><code>Default</code>: default renderer</li>
+<li><code>WebGL2</code>: better performance + battery life</li>
+</ul>
+</li>
+<li>
+<p>Renderer configuration</p>
+<ul>
+<li><code>Default</code>: let the browser decide</li>
+<li><code>Low power</code>: use less battery</li>
+<li><code>High performance</code>: prioritize rendering performance over power consumption</li>
+<li>📝 It's recommended to only use <code>Default</code> or <code>Low power</code>. Using <code>High performance</code> doesn't provide better visual image.</li>
 </ul>
 </li>
 <li>
 <p>Clarity boost:</p>
 <ul>
-<li>Unsharp masking: simple and provides acceptable visual quality.</li>
+<li>Unsharp masking: simple and provides acceptable visual quality</li>
 <li>AMD FidelityFX CAS: only available in WebGL2 renderer. This provides better visual quality than the Unsharp masking method.</li>
 </ul>
 </li>
 </ul>
 <h3 id="which-renderer-to-use">Which renderer to use?</h3>
-<p>If your device supports it, using WebGL2 + AMD FidelityFX CAS will provide the best visual quality + better battery life (~30%).</p>
+<p>If your device supports it, using WebGL2 + AMD FidelityFX CAS will provide the best visual quality + better battery life (up to 30%).</p>
 <p><img alt="Clarity boost's comparisons" src="../images/clarity-boost/comparisons.png" /></p>
 
 
@@ -1042,8 +1219,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.sections", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
