@@ -1120,6 +1120,7 @@
 <p>This guide has been tested on these devices:  </p>
 <ul>
 <li>✅ Working:  <ul>
+<li>Amazon Fire TV Stick 4k/4k Max: <code>1080p/High/WebGL2/AMD FidelityFX CAS</code></li>
 <li>Chromecast with Google TV 4k: <code>720p/High</code>  </li>
 <li>Xiaomi TV Box 4k 2nd gen: <code>1080p/High</code>  </li>
 <li>onn. Google TV 4K Streaming Box (2023): <code>1080p/High</code>  </li>
@@ -1137,46 +1138,32 @@
 <p>Install <a href="https://github.com/redphx/better-xcloud-android/releases/latest">Android app</a>  </p>
 </li>
 <li>
-<p>Install <a href="https://thorium.rocks/">Thorium WebView</a>:</p>
-<ul>
-<li>64-bit device: <a href="https://github.com/Alex313031/Thorium-Android/releases/download/M124.0.6367.218/SystemWebView_arm64.apk">SystemWebView_arm64.apk</a>  </li>
-<li>32-bit device: <a href="https://github.com/Alex313031/Thorium-Android/releases/download/M124.0.6367.218/SystemWebView_arm32.apk">SystemWebView_arm32.apk</a>  </li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>If you can't install the app, ensure there are no apps on your device with <code>com.android.webview</code> as package name. If there is one, uninstall it and try again if it's not a System app. Otherwise you can continue with the guide using the default System  WebView, but don't expect the same result.  </li>
-<li>If Better xCloud app crashes after changing the WebView implementation, maybe you installed 64-bit version on a 32-bit device. Uninstall the 64-bit version and re-install the 32-bit one.</li>
-</ul>
-</div>
-</li>
-<li>
 <p>Open the <strong>Better xCloud</strong> app, then go to the App settings</p>
 </li>
 <li>
-<p>Enable <code>Force low-latency audio</code></p>
-</li>
-<li>
-<p>Change <code>WebView implementation</code> to <code>Android System WebView 124.0.6367.218</code> (this one is Thorium WebView)</p>
-</li>
-<li>
-<p>Open <code>WebView DevTools</code>, then select the <code>Android System WebView</code> with the blue globe icon &gt; <code>Just once</code>.</p>
-</li>
-<li>
-<p>Inside <code>WebView DevTools</code> screen, switch to <code>Flags</code> tab, then change these flags to:</p>
+<p>Enable <code>Optimize WebView performance</code> setting  </p>
+<blockquote>
+<details class="info">
+<summary>Info</summary>
+<p>This will automatically set these flags in the WebView:  </p>
 <ul>
 <li>ignore-gpu-blocklist: <code>✅ Enabled</code></li>
-<li>WebViewSurfaceControl: <code>✅ Enabled</code></li>
 <li>WebViewThreadSafeMedia: <code>✅ Enabled</code></li>
-<li>VSyncDecoding: <code>✅ Enabled</code></li>
-<li>BackgroundResourceFetch: <code>✅ Enabled</code></li>
-<li>ThreadPoolCap2: <code>❌ Disabled</code></li>
+<li>WebViewSurfaceControl: <code>✅ Enabled</code></li>
+<li>WebViewSurfaceControlForTV: <code>✅ Enabled</code></li>
 <li>WebRtcCombinedNetworkAndWorkerThread: <code>❌ Disabled</code>  </li>
 </ul>
-<p><em>(some of these flags may be not neccessary)</em></p>
+</details>
+</blockquote>
 </li>
 <li>
-<p>Force close Better xCloud app, then re-open it.</p>
+<p>Open <code>WebView Manager &gt; Downloader</code>, then download and install <code>Thorium WebView</code>.</p>
+</li>
+<li>
+<p>After installing, switch back to the <code>Installed</code> tab, press <code>Refresh</code>, then select <code>Android System WebView</code> with a blue globe icon.</p>
+</li>
+<li>
+<p>Close the Settings screen, force close Better xCloud app, then re-open it.</p>
 </li>
 <li>
 <p>Set these Better xCloud script's settings:  </p>
