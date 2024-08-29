@@ -18,7 +18,7 @@
         <link rel="prev" href="../../faq/">
       
       
-        <link rel="next" href="../android-webview-implementation/">
+        <link rel="next" href="../nvidia-shield-tv/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -244,6 +244,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../troubleshooting/" class="md-tabs__link">
+        
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../faq/" class="md-tabs__link">
         
   
@@ -297,33 +314,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../translators/" class="md-tabs__link">
-        
-  
     
-  
-  Translators
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../acknowledgements/" class="md-tabs__link">
-        
-  
     
+      <li class="md-tabs__item">
+        <a href="../../acknowledgements/" class="md-tabs__link">
+          
   
   Acknowledgements
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -812,6 +813,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../faq/" class="md-nav__link">
         
   
@@ -849,10 +870,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -863,8 +884,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Guides
           </label>
@@ -947,27 +968,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../android-webview-implementation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Switch Android WebView implementation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../nvidia-shield-tv/" class="md-nav__link">
         
   
@@ -1015,22 +1015,44 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../translators/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Translators
-  </span>
-  
-
-      </a>
-    </li>
-  
-
+    
+    
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Acknowledgements
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Acknowledgements
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -1045,6 +1067,35 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../translators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1110,7 +1161,7 @@
 <p class="admonition-title">Note</p>
 <ul>
 <li>You don't need to follow this guide if your device can play xCloud without any problem!</li>
-<li>This guide is mostly for Android TV devices</li>
+<li>This guide is recommended for Android TV devices</li>
 </ul>
 </div>
 <h2 id="steps-to-setup">Steps to setup</h2>
@@ -1157,10 +1208,14 @@
 </blockquote>
 </li>
 <li>
-<p>Open <code>WebView Manager &gt; Downloader</code>, then download and install <code>Thorium WebView</code>.</p>
+<p>Open <code>WebView Manager &gt; Downloader</code>, then download and install any of these WebViews:</p>
+<ul>
+<li>Thorium WebView: best WebView if your device supports it</li>
+<li>Mulch WebView</li>
+</ul>
 </li>
 <li>
-<p>After installing, switch back to the <code>Installed</code> tab, press <code>Refresh</code>, then select <code>Android System WebView</code> with a blue globe icon.</p>
+<p>After installing, switch back to the <code>Installed</code> tab, press <code>Refresh</code>, then select the recently installed WebView.</p>
 </li>
 <li>
 <p>Close the Settings screen, force close Better xCloud app, then re-open it.</p>
