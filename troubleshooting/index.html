@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.27">
     
     
       
@@ -1149,10 +1149,19 @@
 <h2 id="i-got-the-failed-to-run-better-xcloud-error-message">I got the "Failed to run Better xCloud" error message</h2>
 <div class="admonition note">
 <p class="admonition-title">Chrome/Edge/Chromium</p>
+<p><em>⚠️ This is Tampermonkey's problem. Don't report it on Better xCloud GitHub.</em>  </p>
 <p>For users of the Tampermonkey extension in a Chrome-based browser, enabling <code>Developer Mode</code> is a requirement introduced with Manifest V3 updates.</p>
 <ol>
+<li>Check Tampermonkey's dashboard to make sure you installed the script correctly</li>
 <li>Open the browser's Extensions page</li>
 <li>On the top right corner, click the <code>Developer Mode</code> toggle to enable it</li>
+<li>Reload xCloud website</li>
+</ol>
+<p>If it still doesn't work, do these additional steps in Tampermonkey's Settings page:  </p>
+<ol>
+<li><code>General</code> &gt; <code>Config mode</code> &gt; <code>Advanced</code></li>
+<li><code>Security</code> &gt; <code>Content Script API</code> &gt; <code>UserScript API Dynamic</code></li>
+<li>(Optional) <code>Experimental</code> &gt; <code>Inject Mode</code> &gt; <code>Instant</code></li>
 <li>Reload xCloud website</li>
 </ol>
 </div>
